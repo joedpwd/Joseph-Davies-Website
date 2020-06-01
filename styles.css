@@ -1,0 +1,48 @@
+.is-loading {background: red;}
+
+body {font-family: 'B612';}
+
+header {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+header h1 {font-family: 'Lora';  font-weight: 400;}
+
+h1 {
+    font-family: 'Lora';
+    font-weight: 600;
+}
+
+.navbar-start {width: 100%; justify-content: center;}
+
+.navbar-start a {margin: 0px 20px;}
+
+.navbar-burger {
+    margin: auto;
+}
+
+.showcase-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.showcase-card {
+    padding: 0px;
+    border-radius: 20px;  
+}
+
+.showcase-card-image-slot {
+    padding: 40px;
+    background-color: rgb(15, 183, 186, 0.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content {
+    padding: 40px;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
