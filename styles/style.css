@@ -46,3 +46,43 @@ h1 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.latest-content-header {
+    margin-bottom: 20px;;
+}
+
+.content-card {
+    border-radius: 20px;  
+}
+
+.content-card .card-content {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.content-card .card-image, .content-card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+}
+
+/* .content-card .card-image {
+    position: relative;
+}
+
+.content-card img {
+    position: absolute;
+    z-index: -1;
+}  */
+
+.content-card .card-image {
+    overflow: hidden;
+}
+
+.content-card img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.card-content h3 {
+    word-wrap: break-word;
+}
