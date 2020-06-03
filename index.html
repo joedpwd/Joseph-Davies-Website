@@ -81,41 +81,50 @@
             <h3 class="section-title is-size-2">Latest</h3>
 
             <div class="columns is-variable is-5 is-centered is-multiline">
-               <div class="column is-half-tablet is-one-quarter-desktop">
-                  <div class="content-card card">
-                     <div class="card-image" style="background-image: url('img/bethany.png');">
-                     </div>
-                     <div class="card-content">
-                        <h3 class="is-size-3">bethanyfi.org</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="column is-half-tablet is-one-quarter-desktop">
-                  <div class="content-card card">
-                     <div class="card-image" style="background-image: url('img/ceulan.png');">
-                     </div>
-                     <div class="card-content">
-                        <h3 class="is-size-3">ceulan.welshpony.co.uk</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="column is-half-tablet is-one-quarter-desktop">
-                  <div class="content-card card">
-                     <div class="card-image" style="background-image: url('img/code.jpeg');">
-                     </div>
-                     <div class="card-content">
-                        <h3 class="is-size-3">Ten Things I Love About</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam odit sapiente modi sint expedita doloribus officia, perferendis explicabo sit eaque. Fuga debitis sint delectus officia possimus labore ad qui esse.</p>
-                     </div>
-                  </div>
-               </div>
+
+               <post-card>
+                  <div slot="post-image" class="card-image" style="background-image: url('img/bethany.png');"></div>
+                  <template slot="post-title">bethanyfi.org</template>
+               </post-card>
+
+               <post-card>
+                  <div slot="post-image" class="card-image" style="background-image: url('img/ceulan.png');"></div>
+                  <template slot="post-title">ceulan.welshpony.co.uk</template>
+               </post-card>
+
+               <post-card>
+                  <div slot="post-image" class="card-image" style="background-image: url('img/code.jpeg');"></div>
+                  <template slot="post-title">Ten Things I Love About</template>
+                  <template slot="post-summary">
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est quidem corporis libero, eum esse harum 
+                     similique amet vitae nihil distinctio nulla ipsam culpa mollitia quisquam numquam laudantium! Optio, veniam!
+                  </template>
+               </post-card>
+
             </div>
          </section>
+         
          <section class="section section-padding has-text-centered">
             <h3 class="section-title is-size-2">Blog</h3>
             <div class="blog container">
-               <h3 class="is-size-2">Blog Test</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque, distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?</p>
+               <h3 class="blog-post-title is-size-2">Blog Test</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
+                  distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
+               </p>
              </div>
          </section>
          <footer class="footer">

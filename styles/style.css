@@ -122,3 +122,7 @@ p {
     background-position: center;
     background-size: cover;
 }
+
+.blog-post-title {
+    margin-bottom: 20px;
+}
