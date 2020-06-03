@@ -106,3 +106,19 @@ header h1 {
 p {
     margin-top: 10px;;
 }
+
+.blog {
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.latest-section .card-image {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
