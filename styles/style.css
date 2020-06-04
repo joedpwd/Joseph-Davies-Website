@@ -124,5 +124,19 @@ p {
 }
 
 .blog-post-title {
-    margin-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+.blog p {
+    line-height: 2em;
+    margin: auto;
+    width: 800px;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.blog img {
+    max-width: 800px;
+    max-height: 600px;
+    margin-bottom: 2em;
 }
