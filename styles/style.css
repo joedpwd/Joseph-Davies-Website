@@ -107,7 +107,7 @@ p {
     margin-top: 10px;;
 }
 
-.blog {
+.form, .blog {
     background-color: #ffffff;
     padding: 50px;
 }
@@ -139,4 +139,9 @@ p {
     max-width: 800px;
     max-height: 600px;
     margin-bottom: 2em;
+}
+
+.form {
+    width: 600px;
+    text-align: left;
 }
