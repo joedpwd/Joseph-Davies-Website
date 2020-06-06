@@ -17,7 +17,7 @@
              <div class="container">
                 <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': showNav }">
                    <div class="navbar-start" v-bind:class="{'is-flex': !showNav}">
-                      <a class="navbar-item">
+                      <a href="{{'home'|page}}" class="navbar-item">
                          Home
                       </a>
                 
@@ -29,11 +29,11 @@
                          Services
                       </a>
 
-                      <a class="navbar-item">
+                      <a href="{{'blog/post'|page}}" class="navbar-item">
                          Blog
                       </a>
                 
-                      <a class="navbar-item">
+                      <a href="{{'contact'|page}}" class="navbar-item">
                          Contact
                       </a>
 
