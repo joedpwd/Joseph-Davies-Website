@@ -5,7 +5,7 @@ Vue.component('post-card', {
             <slot name="post-image"></slot>
             <div class="card-content">
                 <h3 class="is-size-3"><slot name="post-title"></slot></h3>
-                <p><slot name="post-summary"></slot></p>
+                <p><slot name="post-highlight"></slot></p>
             </div>
         </div>
     </div>

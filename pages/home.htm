@@ -4,45 +4,55 @@ layout = "default"
 is_hidden = 0
 ==
 <section class="showcase section has-text-centered">
-    <h3 class="section-title is-size-2">Welcome</h3>
-    <div class="columns is-centered">
-       <div class="column is-two-thirds-tablet is-one-third-desktop is-one-quarter-widescreen">
-          <div class="showcase-card card">
-             <div class="showcase-card-image-slot">
-                <img class="showcase-image" src="{{'images/joe1.jpg'|media}}" alt="Joe at the Park">
-             </div>
-             <div class="content">
-                <h1 class="is-size-2">Hello World!</h1>
-                <p>My name is Joe, and I like to make things. This is my personal site where you can see all the things I've been a part of.</p>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
+   <h3 class="section-title is-size-2">Welcome</h3>
+   <div class="columns is-centered">
+      <div class="column is-two-thirds-tablet is-one-third-desktop is-one-quarter-widescreen">
+         <div class="showcase-card card">
+            <div class="showcase-card-image-slot">
+               <img class="showcase-image" src="{{'images/joe1.jpg'|media}}" alt="Joe at the Park">
+            </div>
+            <div class="content">
+               <h1 class="is-size-2">Hello World!</h1>
+               <p>My name is Joe, and I like to make things. This is my personal site where you can see all the things
+                  I've been a part of.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
 
- <section class="latest-section section section-padding has-text-centered">
-    <h3 class="section-title is-size-2">Latest</h3>
+<section class="latest-section section section-padding has-text-centered">
+   <h3 class="section-title is-size-2">Latest</h3>
 
-    <div class="columns is-variable is-5 is-centered is-multiline">
+   <div class="columns is-variable is-5 is-centered is-multiline">
 
-       <post-card>
-          <div slot="post-image" class="card-image" style="background-image: url('{{'images/bethany.png'|media}}');"></div>
-          <template slot="post-title">bethanyfi.org</template>
-       </post-card>
+      <post-card>
+         <div slot="post-image" class="card-image" style="background-image: url( {{'images/bethany.png'|media}} ); ">
+         </div>
+         <template slot="post-title">Bethan Family Institute Website</template>
+         <template slot="post-highlight">
+            <i class="post-icon fab fa-wordpress"></i>
+         </template>
+      </post-card>
 
-       <post-card>
-          <div slot="post-image" class="card-image" style="background-image: url('{{'images/ceulan.png'|media}}');"></div>
-          <template slot="post-title">ceulan.welshpony.co.uk</template>
-       </post-card>
+      <post-card>
+         <div slot="post-image" class="card-image" style="background-image: url({{'images/ceulan.png'|media}});">
+         </div>
+         <template slot="post-title">Ceulan Stud Website</template>
+         <template slot="post-highlight">
+            <i class="post-icon fab fa-wordpress"></i>
+         </template>
+      </post-card>
 
-       <post-card>
-          <div slot="post-image" class="card-image" style="background-image: url('img/code.jpeg');"></div>
-          <template slot="post-title">Ten Things I Love About</template>
-          <template slot="post-summary">
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est quidem corporis libero, eum esse harum 
-             similique amet vitae nihil distinctio nulla ipsam culpa mollitia quisquam numquam laudantium! Optio, veniam!
-          </template>
-       </post-card>
+      <post-card>
+         <div slot="post-image" class="card-image" style="background-image: url({{'images/code.jpeg'|media}});"></div>
+         <template slot="post-title">Ten Things I Love About</template>
+         <template slot="post-highlight">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est quidem corporis libero, eum esse
+            harum
+            similique amet vitae nihil distinctio nulla ipsam culpa mollitia quisquam numquam laudantium! Optio, veniam!
+         </template>
+      </post-card>
 
-    </div>
+   </div>
 </section>

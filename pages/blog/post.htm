@@ -1,30 +1,11 @@
-title = "Generic Post"
-url = "/blog/post"
+title = "Blog Post"
+url = "/blog/post/:slug"
 layout = "default"
+description = "For viewing individual blog posts"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
 ==
-<section class="section section-padding has-text-centered">
-    <h3 class="section-title is-size-2">Blog</h3>
-    <div class="blog container">
-       <h3 class="blog-post-title is-size-1">Blog Test</h3>
-       <img src="img/code.jpeg">
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-       </p>
-       <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed inventore repellat vitae ea natus id, neque,
-          distinctio nihil amet temporibus nesciunt expedita dolorem minima molestias dolorum eum at odit?
-       </p>
-     </div>
-</section>
+{% component 'blogPost' %}

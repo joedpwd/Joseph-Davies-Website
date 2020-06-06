@@ -1,0 +1,35 @@
+title = "Blog Category"
+url = "/blog/category/:slug"
+layout = "default"
+description = "Page for viewing individual blog categories."
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{:slug}}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
+<section class="section section-padding has-text-centered">
+    <h3 class="section-title is-size-2">Blog</h3>
+    <div class="blog container">
+        <div class="columns">
+            <div class="column is-three-quarters">
+                {% component 'blogPosts' %}
+            </div>
+            <div class="column is-one-quarter">
+                {% component 'blogCategories' %}
+            </div>
+        </div>
+        
+
+    </div>
+</section>

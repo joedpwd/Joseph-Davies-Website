@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
         <link rel="stylesheet" href="{{'assets/css/style.css'|theme}}">
+        
+        <!-- <script src="https://kit.fontawesome.com/740e7937b6.js" crossorigin="anonymous"></script> -->
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     </head>
@@ -39,11 +41,13 @@
                 {% partial "footer" %}
             </footer>
 
-            {% scripts %}
-            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-            <script src="{{'assets/js/main.js'|theme}}"></script>
-
         </div>
+
+        {% scripts %}
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="{{'assets/js/main.js'|theme}}"></script>
+
+        
         
     </body>
 </html>
