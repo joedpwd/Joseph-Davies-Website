@@ -111,7 +111,7 @@ p {
     padding: 50px;
 }
 
-.form, .blog {
+.form{
     background-color: #ffffff;
 }
 
@@ -127,16 +127,20 @@ p {
 }
 
 .blog-post-title {
+    text-decoration: none;
     margin-bottom: 1em;
+}
+
+.blog-post-title:hover {
+    text-decoration: underline;
 }
 
 .post-icon {
     font-size: 3em;
 }
+
 .blog p {
     line-height: 2em;
-    margin: auto;
-    width: 800px;
     text-align: left;
     margin-bottom: 2em;
 }
@@ -150,4 +154,38 @@ p {
 .form {
     width: 600px;
     text-align: left;
+}
+
+.blog h3 {
+    margin-bottom: 1em;
+}
+
+.blog-column {
+    padding: 0px;
+}
+
+.blog-column-content{
+    padding: 0px;
+    max-width: 900px;
+    background-color: #ffffff;
+
+}
+.blog-content {
+    padding: 60px;
+}
+.blog-categories {
+    background-color: #ffffff;
+    height: fit-content;
+    padding: 60px;
+    text-align: left;
+    line-height: 2em;
+}
+
+.post-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog .container {
+    margin-bottom: 50px;
 }
