@@ -38,6 +38,7 @@ header h1 {
     display: block;
     margin: auto;
     border-radius: 50%;
+    border: solid 2px #ffffff;
 }
 
 .showcase-card {

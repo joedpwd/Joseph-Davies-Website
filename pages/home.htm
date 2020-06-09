@@ -2,6 +2,14 @@ title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
 ==
 <section class="showcase section has-text-centered">
    <h3 class="section-title is-size-2">Welcome</h3>
@@ -21,38 +29,4 @@ is_hidden = 0
    </div>
 </section>
 
-<section class="latest-section section section-padding has-text-centered">
-   <h3 class="section-title is-size-2">Latest</h3>
-
-   <div class="columns is-variable is-5 is-centered is-multiline">
-
-      <post-card>
-         <div slot="post-image" class="card-image" style="background-image: url( {{'images/bethany.png'|media}} ); ">
-         </div>
-         <template slot="post-title">Bethan Family Institute Website</template>
-         <template slot="post-highlight">
-            <i class="post-icon fab fa-wordpress"></i>
-         </template>
-      </post-card>
-
-      <post-card>
-         <div slot="post-image" class="card-image" style="background-image: url({{'images/ceulan.png'|media}});">
-         </div>
-         <template slot="post-title">Ceulan Stud Website</template>
-         <template slot="post-highlight">
-            <i class="post-icon fab fa-wordpress"></i>
-         </template>
-      </post-card>
-
-      <post-card>
-         <div slot="post-image" class="card-image" style="background-image: url({{'images/code.jpeg'|media}});"></div>
-         <template slot="post-title">Ten Things I Love About</template>
-         <template slot="post-highlight">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est quidem corporis libero, eum esse
-            harum
-            similique amet vitae nihil distinctio nulla ipsam culpa mollitia quisquam numquam laudantium! Optio, veniam!
-         </template>
-      </post-card>
-
-   </div>
-</section>
+{% partial "latest" %}
