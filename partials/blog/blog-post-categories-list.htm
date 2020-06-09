@@ -1,6 +1,6 @@
 {% if blogCategories.categories|length > 0 %}
     <ul class="category-list">
-        {% partial 'blog-post-categories-items.htm'
+        {% partial 'blog/blog-post-categories-items.htm'
             categories = blogCategories.categories
             currentCategorySlug = blogCategories.currentCategorySlug
         %}

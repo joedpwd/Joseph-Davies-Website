@@ -19,19 +19,19 @@ categoryPage = "blog/category"
 ==
 <section class="section section-padding has-text-centered">
     
-    <h3 class="section-title is-size-2">Blog</h3>
+    <h3 class="section-title is-size-2">BLOG</h3>
     
     <div class="blog">
         <div class="columns is-centered is-variable is-0-mobile is-7-tablet">
             <div class="column is-two-thirds-tablet is-three-quarters-desktop blog-column-content">
                 <div class="container blog-content">
-                    {% partial 'blog-post-list.htm' %}
+                    {% partial 'blog/blog-post-list' %}
                 </div> 
             </div>
             <div class="column is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd blog-column">
-                <div class="container blog-categories">
-                    <h5 class="is-size-5">Categories</h5>
-                    {% partial 'blog-post-categories-list.htm' %}
+                <div class="container blog-sidebar">
+                    <h5 class="is-size-5 has-text-centered">Categories</h5>
+                    {% partial 'blog/blog-post-categories-list' %}
                 </div>
             </div>
         </div>

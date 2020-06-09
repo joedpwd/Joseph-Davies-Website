@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lora';
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 body {
@@ -147,7 +147,7 @@ p {
 
 .blog img {
     max-width: 800px;
-    max-height: 600px;
+    max-height: 600px;    
     margin-bottom: 2em;
 }
 
@@ -171,14 +171,17 @@ p {
 
 }
 .blog-content {
-    padding: 60px;
+    padding: 10px 0px;
 }
-.blog-categories {
+.blog-sidebar {
     background-color: #ffffff;
     height: fit-content;
     padding: 60px;
     text-align: left;
     line-height: 2em;
+}
+.blog-sidebar h5 {
+    margin-bottom: 1em;
 }
 
 .post-list a {
@@ -188,4 +191,22 @@ p {
 
 .blog .container {
     margin-bottom: 50px;
+}
+
+.blog-featured-image {
+    max-height: 150px;
+    max-width: 200px;
+}
+
+hr {
+    margin: 48px 0px;
+}
+
+.recent-posts:hover {
+    text-decoration: underline;
+}
+
+.blog-content p {
+    max-width: 800px;
+    margin: 10px auto;
 }

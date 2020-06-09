@@ -8,7 +8,7 @@
 
         {% if category.children|length > 0 %}
             <ul>
-                {% partial 'blog-post-categories-items.htm'
+                {% partial 'blog/blog-post-categories-items.htm'
                     categories=category.children
                     currentCategorySlug=currentCategorySlug
                 %}
