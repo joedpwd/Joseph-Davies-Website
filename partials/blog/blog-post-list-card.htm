@@ -7,7 +7,7 @@
         <post-card>
             <div slot="post-image" class="card-image" style="background-image: url( {{ image.path }} ); ">
             </div>
-            <template slot="post-title">{{ post.title }}</template>
+            <template slot="post-title"><a href="{{ post.url }}"><h3 class="is-size-3">{{ post.title }}</h3></a></template>
             <template slot="post-highlight">
                 {{ post.summary|raw }}
             </template>

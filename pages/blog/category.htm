@@ -6,7 +6,7 @@ is_hidden = 0
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = "{{:slug}}"
+categoryFilter = "{{ :slug }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
@@ -18,14 +18,14 @@ slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "blog/category"
 ==
-
+<?php
 function onEnd()
 {
     // Optional - set the page title to the category name
     if ($this->category)
         $this->page->title = $this->category->name;
 }
-
+?>
 ==
 <section class="section section-padding has-text-centered">
     
