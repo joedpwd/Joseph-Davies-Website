@@ -1,12 +1,28 @@
 title = "Contact"
 url = "/contact"
 layout = "default"
+is_hidden = 0
+
+[emptyForm]
+rules[name] = "required"
+rules[subject] = "required"
+rules[message] = "required"
+rules[email] = "required|email"
+messages_success = "Your form was successfully submitted"
+messages_errors = "There were errors with your submission"
+inline_errors = "variable"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
 ==
 <section class="section section-padding has-text-centered">
     <h3 class="section-title is-size-2">Form</h3>
     <div class="form container">
 
-        <div class="field">
+        <!-- <div class="field">
             <label class="label">Name</label>
             <div class="control">
                 <input class="input" type="text" placeholder="Your Name">
@@ -44,7 +60,7 @@ layout = "default"
             <div class="control">
                 <button class="button is-link">Submit</button>
             </div>
-        </div>
-
+        </div> -->
+        {% component 'emptyForm' %}
     </div>
 </section>

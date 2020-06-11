@@ -157,7 +157,7 @@ p {
 }
 
 .form {
-    width: 800px;
+    max-width: 800px;
     text-align: left;
 }
 
@@ -215,3 +215,19 @@ hr {
     max-width: 800px;
     margin: 10px auto;
 }
+
+.alert {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.alert button {
+    display: none;
+}
+
+.alert h4 {
+    margin-bottom: 1em;
+}
+
