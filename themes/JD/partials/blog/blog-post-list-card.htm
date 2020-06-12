@@ -1,0 +1,17 @@
+{% set posts = blogPosts.posts %}
+
+{% for post in posts %}
+
+    {% if post.featured_images.count %}
+        {% set image = post.featured_images[0] %}
+        <post-card>
+            <div slot="post-image" class="card-image" style="background-image: url( {{ image.path }} ); ">
+            </div>
+            <template slot="post-title"><a href="{{ post.url }}"><h3 class="is-size-3">{{ post.title }}</h3></a></template>
+            <template slot="post-highlight">
+                {{ post.summary|raw }}
+            </template>
+        </post-card>
+    {% endif %}
+
+{% endfor %}

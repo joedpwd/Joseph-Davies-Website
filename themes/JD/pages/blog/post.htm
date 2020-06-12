@@ -1,0 +1,54 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+description = "For viewing individual blog posts"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if (isset($this->post))
+        $this->page->title = $this->post->title;
+}
+?>
+==
+<section class="section section-padding has-text-centered">
+    
+    {% if post %}
+        <h3 class="section-title is-size-2">{{ post.title }}</h3>
+        
+        <div class="blog">
+            <div class="columns is-centered is-variable is-0-mobile is-7-tablet">
+                <div class="column is-two-thirds-tablet is-three-quarters-desktop blog-column-content">
+                    <div class="container blog-content">
+                        {% partial 'blog/blog-post' %}
+                    </div> 
+                </div>
+                <div class="column is-one-third-tablet is-one-quarter-desktop blog-column">
+                    <div class="container blog-sidebar">
+                        <h5 class="is-size-5 has-text-centered">Recent Posts</h5>
+                        {% partial 'blog/blog-post-list-recent' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    {% else %}
+        <h3 class="section-title is-size-2">Post Not Found</h3>
+
+    {% endif %}
+
+</section>

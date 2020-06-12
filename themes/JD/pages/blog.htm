@@ -1,0 +1,40 @@
+title = "Blog"
+url = "/blog"
+layout = "default"
+description = "The main blog page"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category"
+==
+<section class="section section-padding has-text-centered">
+    
+    <h3 class="section-title is-size-2">BLOG</h3>
+    
+    <div class="blog">
+        <div class="columns is-centered is-variable is-0-mobile is-7-tablet">
+            <div class="column is-two-thirds-tablet is-three-quarters-desktop blog-column-content">
+                <div class="container blog-content">
+                    {% partial 'blog/blog-post-list' %}
+                </div> 
+            </div>
+            <div class="column is-one-third-tablet is-one-quarter-desktop is-one-fifth-fullhd blog-column">
+                <div class="container blog-sidebar">
+                    <h5 class="is-size-5 has-text-centered">Categories</h5>
+                    {% partial 'blog/blog-post-categories-list' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

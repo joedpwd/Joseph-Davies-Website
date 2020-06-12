@@ -1,0 +1,15 @@
+title = "Portfolio"
+url = "/portfolio"
+layout = "default"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "projects"
+postsPerPage = 24
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+{% partial "cards" title="PORTFOLIO" %}

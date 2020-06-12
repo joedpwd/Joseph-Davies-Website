@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Joseph Davies | {{ this.page.title }}</title>
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta name="author" content="OctoberCMS">
+        <meta name="generator" content="OctoberCMS">
+    
+        {% styles %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=B612">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="{{'assets/css/style.css'|theme}}">
+        
+        <!-- <script src="https://kit.fontawesome.com/740e7937b6.js" crossorigin="anonymous"></script> -->
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    </head>
+    <body class="page-{{ this.page.id }} layout-{{ this.layout.id }}">
+
+        <div id="root">
+
+            <!-- Header -->
+            <header id="layout-header" class="header-navbar">
+                <!-- Nav -->
+                {% partial "header" %}
+            </header>
+
+            <!-- Content -->
+            <div id="layout-content">
+                {% page %}
+            </div>
+
+
+            <!-- Footer -->
+            <footer id="layout-footer">
+                {% partial "footer" %}
+            </footer>
+
+        </div>
+
+        {% scripts %}
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{'assets/js/main.js'|theme}}"></script>
+
+        {% framework %}
+        {% framework extras %}
+        
+    </body>
+</html>

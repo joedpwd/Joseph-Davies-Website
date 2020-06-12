@@ -1,0 +1,12 @@
+{% set posts = blogPosts.posts %}
+
+<ul class="post-list">
+    {% for post in posts %}
+        <li>
+            <ul class=""><a class="recent-posts" href="{{ post.url }}">{{ post.title }}</ul></h3>
+        </li>
+    {% else %}
+        <li class="no-data">{{ blogPosts.noPostsMessage }}</li>
+    {% endfor %}
+</ul>
+
