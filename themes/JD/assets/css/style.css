@@ -224,6 +224,7 @@ hr {
 
 .blog-content ul {
     list-style: disc;
+    margin: 0 4em;
 }
 
 .alert {
