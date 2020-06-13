@@ -178,6 +178,11 @@ p {
 .blog-content {
     padding: 10px 0px;
 }
+
+.blog-content h1 {
+    font-size: 40px
+}
+
 .blog-sidebar {
     background-color: #ffffff;
     height: fit-content;
@@ -211,9 +216,14 @@ hr {
     text-decoration: underline;
 }
 
-.blog-content p {
+.blog-content p, .blog-content ul {
     max-width: 800px;
     margin: 10px auto;
+    text-align: left;
+}
+
+.blog-content ul {
+    list-style: disc;
 }
 
 .alert {
